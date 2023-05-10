@@ -10,6 +10,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+// PRUEBA PARA EL COMMIT
 public class Contenedores extends JFrame{
     private JButton mapaButton;
     private JButton desapilarButton;
