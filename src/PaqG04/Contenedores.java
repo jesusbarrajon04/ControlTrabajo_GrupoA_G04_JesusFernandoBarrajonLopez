@@ -35,6 +35,7 @@ public class Contenedores extends JFrame{
     private JRadioButton nHub0;
     private JRadioButton nHub1;
     private JRadioButton nHub2;
+    private JButton botonNuevo;
     private Puerto Valencia;
 
     Contenedores(){
@@ -228,7 +229,23 @@ public class Contenedores extends JFrame{
                 }
             }
         });
+        botonNuevo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (prioridad1.isSelected()){
+                    int prioridad = 1;
+                    Valencia.buscarContenedor(prioridad);
+                }else if (prioridad2.isSelected()){
+                    int prioridad = 2;
+                    Valencia.buscarContenedor(prioridad);
+                }else if (prioridad3.isSelected()){
+                        int prioridad = 3;
+                        Valencia.buscarContenedor(prioridad);
+                }
+            }
+        });
     }
+
     public static void main(String[] args) {
         Contenedores contenedores=new Contenedores();
     }
